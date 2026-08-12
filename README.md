@@ -1,157 +1,259 @@
-<h1 align="center" style="border-bottom: none">
-    <b>
-        <a href="https://www.appflowy.com">AppFlowy</a><br>
-    </b>
-    ⭐️  The Open Source Alternative To Notion  ⭐️ <br>
-</h1>
+# Pravidhi Flow
 
 <p align="center">
-AppFlowy is the AI workspace where you achieve more without losing control of your data
+  <strong>Your workspace. Your agents. Your data.</strong>
 </p>
 
 <p align="center">
-<a href="https://discord.gg/9Q2xaN37tV"><img src="https://img.shields.io/badge/AppFlowy.IO-discord-orange"></a>
-<a href="https://github.com/AppFlowy-IO/appflowy"><img src="https://img.shields.io/github/stars/AppFlowy-IO/appflowy.svg?style=flat&logo=github&colorB=deeppink&label=stars"></a>
-<a href="https://github.com/AppFlowy-IO/appflowy"><img src="https://img.shields.io/github/forks/AppFlowy-IO/appflowy.svg"></a>
-<a href="https://opensource.org/licenses/AGPL-3.0"><img src="https://img.shields.io/badge/license-AGPL-purple.svg" alt="License: AGPL"></a>
-
+  An open-source AI workspace for turning knowledge, projects, and repeatable work into executable flows.
 </p>
 
 <p align="center">
-    <a href="https://www.appflowy.com"><b>Website</b></a> •
-    <a href="https://forum.appflowy.io/"><b>Forum</b></a> •
-    <a href="https://discord.gg/9Q2xaN37tV"><b>Discord</b></a> •
-    <a href="https://www.reddit.com/r/AppFlowy"><b>Reddit</b></a> •
-    <a href="https://twitter.com/appflowy"><b>Twitter</b></a>
+  <a href="https://github.com/yashas-13/Pravidhi-Flowy/stargazers">⭐ Star</a> ·
+  <a href="https://github.com/yashas-13/Pravidhi-Flowy/issues">Issues</a> ·
+  <a href="https://github.com/yashas-13/Pravidhi-Flowy/discussions">Discussions</a>
 </p>
 
-<p align="center"><img src="https://appflowy.com/_next/static/media/tasks.796c753e.png" alt="AppFlowy Kanban Board for To-dos"  /></p>
-<p align="center"><img src="https://appflowy.com/_next/static/media/Grid.9e30484b.png" alt="AppFlowy Databases for Tasks and Projects"  /></p>
-<p align="center"><img src="https://appflowy.com/_next/static/media/sites.a8d5b2b9.png" alt="AppFlowy Sites for Beautiful documentation"  /></p>
-<p align="center"><img src="https://appflowy.com/_next/static/media/ai.e1460982.png" alt="AppFlowy AI" /></p>
-<p align="center"><img src="https://appflowy.com/_next/static/media/template.9ea13c3b.png" alt="AppFlowy Templates"  /></p>
+---
 
-<br></br>
-<p align="center" >
-    <img src="https://github.com/user-attachments/assets/5841c491-b564-4a26-b9b6-191def430911" alt="Work across devices" width="1040px" /></p>
-<p align="center" >
-    <img src="https://github.com/user-attachments/assets/c2ba6bb8-746c-4743-9393-d008a669be95" alt="Work across devices" width="1040px" /></p>
-<p align="center" >
-    <img src="https://github.com/user-attachments/assets/e83dd1a3-4975-4d0e-91a1-9eb6e0d248cd" alt="Work across devices" width="1040px" /></p>
+## ⚡ What is Pravidhi Flow?
 
-## User Installation
+Pravidhi Flow is an AI-native workspace built around a simple idea: **knowledge should be able to become action**.
 
-- [Download AppFlowy Desktop (macOS, Windows, and Linux)](https://github.com/AppFlowy-IO/AppFlowy/releases)
-- Other
-  channels: [FlatHub](https://flathub.org/apps/io.appflowy.AppFlowy), [Snapcraft](https://snapcraft.io/appflowy), [Sourceforge](https://sourceforge.net/projects/appflowy/)
-- Available on
-    - [App Store](https://apps.apple.com/app/appflowy/id6457261352): iPhone
-    - [Play Store](https://play.google.com/store/apps/details?id=io.appflowy.appflowy): Android 10 or above; ARMv7 is
-      not supported
-- [Self-hosting AppFlowy](https://appflowy.com/docs/Step-by-step-Self-Hosting-Guide---From-Zero-to-Production)
-- [Source](https://docs.appflowy.io/docs/documentation/appflowy/from-source)
+Use one workspace for:
 
-## Built With
+- 📝 Documents and knowledge
+- 📊 Databases and structured information
+- 🎯 Projects and tasks
+- 🤖 Contextual AI assistance
+- ⚡ Repeatable Flows and automation
+- 🧩 Agents and integrations
+- 🔐 Explicit permissions and data control
 
-- [Flutter](https://flutter.dev/)
+The long-term goal is not to build another AI chat panel. Pravidhi Flow is being evolved into a **workspace operating layer** where people can understand information, plan work, and safely execute actions from the same environment.
 
-- [Rust](https://www.rust-lang.org/)
+## 🧠 The Pravidhi model
 
-## Stay Up-to-Date
+```text
+                    PRAVIDHI FLOW
+                         │
+          ┌──────────────┼──────────────┐
+          │              │              │
+      Workspace         AI           Automation
+          │              │              │
+   Docs / Tasks /     Context /      Flows / Agents
+   Databases /        Planning       Triggers / Tools
+   Projects           Memory         Approvals
+          └──────────────┼──────────────┘
+                         │
+                  Control & Audit
+```
 
-<p align="center"><img src="https://github.com/AppFlowy-IO/appflowy/blob/main/doc/imgs/howtostar.gif" alt="AppFlowy Github - how to star the repo" width="100%" /></p>
+### Workspace
 
-## Getting Started with development
+A flexible foundation for documents, databases, projects, tasks, and knowledge.
 
-Please view the [documentation](https://docs.appflowy.io/docs/documentation/appflowy/from-source) for OS specific
-development instructions
+### AI
 
-## Roadmap
+AI should understand the active workspace context rather than forcing users to repeatedly copy and paste information into a chatbot.
 
-- [AppFlowy Roadmap ReadMe](https://docs.appflowy.io/docs/appflowy/roadmap)
-- [AppFlowy Public Roadmap](https://github.com/orgs/AppFlowy-IO/projects/5/views/12)
+### Agents
 
-If you'd like to propose a feature, submit a feature
-request [here](https://github.com/AppFlowy-IO/AppFlowy/issues/new?assignees=&labels=&template=feature_request.yaml&title=%5BFR%5D+) <br/>
-If you'd like to report a bug, submit a bug
-report [here](https://github.com/AppFlowy-IO/AppFlowy/issues/new?assignees=&labels=&template=bug_report.yaml&title=%5BBug%5D+)
+Agents will use explicit capabilities to read, reason, and perform workspace operations.
 
-## **Releases**
+### Flows
 
-Please see the [changelog](https://appflowy.com/what-is-new) for more details about a given release.
+Flows turn repeatable work into executable workflows with triggers, conditions, actions, approvals, retries, and execution history.
 
-## Contributing
+### Control
 
-Contributions make the open-source community a fantastic place to learn, inspire, and create. Any contributions you make
-are **greatly appreciated**. Please look
-at [Contributing to AppFlowy](https://docs.appflowy.io/docs/documentation/software-contributions/contributing-to-appflowy)
-for details.
+Pravidhi Flow is designed around user control: permissions, auditable actions, and a path toward self-hosted deployments.
 
-If your Pull Request is accepted as it fixes a bug, adds functionality, or makes AppFlowy's codebase significantly
-easier to use or understand, **Congratulations!** If your administrative and managerial work behind the scenes sustains
-the community, **Congratulations!** You are now an official contributor to AppFlowy.
+---
 
-## Translations 🌎🗺
+## 🚀 Product direction
 
-[![translation badge](https://inlang.com/badge?url=github.com/AppFlowy-IO/AppFlowy)](https://inlang.com/editor/github.com/AppFlowy-IO/AppFlowy?ref=badge)
+### 1. AI-native workspace
 
-To add translations, you can manually edit the JSON translation files in `/frontend/resources/translations`, use
-the [inlang online editor](https://inlang.com/editor/github.com/AppFlowy-IO/AppFlowy), or
-run `npx inlang machine translate` to add missing translations.
+- Contextual AI panel
+- Workspace-aware search
+- Summarization and transformation
+- Natural-language workspace creation
+- Persistent, inspectable memory
 
-## Join the community to build AppFlowy together
+### 2. Agent runtime
 
-<a href="https://github.com/AppFlowy-IO/AppFlowy/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=AppFlowy-IO/AppFlowy" />
-</a>
+```text
+User intent
+    ↓
+Plan
+    ↓
+Capability check
+    ↓
+Approval policy
+    ↓
+Execute tools
+    ↓
+Verify result
+    ↓
+Audit
+```
 
-## Why Are We Building This?
+Agents will not receive unrestricted access by default. Tool access and write operations should be capability-scoped.
 
-Notion has been our favourite project and knowledge management tool in recent years because of its aesthetic appeal and
-functionality. Our team uses it daily, and we are on its paid plan. However, as we all know, Notion has its limitations.
-These include weak data security and poor compatibility with mobile devices. Likewise, alternative collaborative
-workplace management tools also have their constraints.
+### 3. Flow engine
 
-The limitations we encountered using these tools and our past work experience with collaborative productivity tools have
-led to our firm belief that there is a glass ceiling on what's possible for these tools in the future. This emanates
-from the fact that these tools will probably struggle to scale horizontally at some point and be forced to prioritize a
-proportion of customers whose needs differ from the rest. While decision-makers want a workplace OS, it is impossible to
-come up with a one-size fits all solution in such a fragmented market.
+```text
+[Trigger]
+    ↓
+[Search / Fetch]
+    ↓
+[AI Analyze]
+    ↓
+[Condition]
+   ↙      ↘
+[Action] [Action]
+   \      /
+    [Verify]
+       ↓
+     [Audit]
+```
 
-When a customer's evolving core needs are not satisfied, they either switch to another or build one from the ground up,
-in-house. Consequently, they either go under another ceiling or buy an expensive ticket to learn a hard lesson. This is
-a requirement for many resources and expertise, building a reliable and easy-to-use collaborative tool, not to mention
-the speed and native experience. The same may apply to individual users as well.
+### 4. Integrations
 
-All these restrictions necessitate our mission - to make it possible for anyone to create apps that suit their needs
-well.
+The architecture is intended to support native tools, APIs, webhooks, plugins, and MCP-based integrations without coupling the workspace to one provider.
 
-- To individuals, we would like to offer Notion's functionality, data security, and cross-platform native experience.
-- To enterprises and hackers, AppFlowy is dedicated to offering building blocks and collaboration infra services to
-  enable you to make apps on your own. Moreover, you have 100% control of your data. You can design and modify AppFlowy
-  your way, with a single codebase written in Flutter and Rust supporting multiple platforms armed with long-term
-  maintainability.
+---
 
-We decided to achieve this mission by upholding the three most fundamental values:
+## 🛠️ Technology
 
-- Data privacy first
-- Reliable native experience
-- Community-driven extensibility
+Pravidhi Flow currently builds on the mature Flutter/Rust workspace foundation inherited from the AppFlowy project.
 
-We do not claim to outperform Notion in terms of functionality and design, at least for now. Besides, our priority
-doesn't lie in more functionality at the moment. Instead, we would like to cultivate a community to democratize the
-knowledge and wheels of making complex workplace management tools while enabling people and businesses to create
-beautiful things on their own by equipping them with a versatile toolbox of building blocks.
+- **Flutter** — cross-platform application UI
+- **Rust** — native/core infrastructure
+- **Dart** — application and UI logic
+- **Protobuf** — structured service communication where used by the foundation
 
-## License
+The current package name remains `appflowy` intentionally during the migration. A package/import rename will be handled separately after a complete dependency and generated-code audit.
 
-Distributed under the AGPLv3 License. See [`LICENSE.md`](https://github.com/AppFlowy-IO/AppFlowy/blob/main/LICENSE) for
-more information.
+---
 
-## Acknowledgments
+## 🗺️ Roadmap
 
-Special thanks to these amazing projects which help power AppFlowy:
+### Foundation
 
-- [cargo-make](https://github.com/sagiegurari/cargo-make)
-- [contrib.rocks](https://contrib.rocks)
-- [flutter_chat_ui](https://pub.dev/packages/flutter_chat_ui)
+- [x] Establish Pravidhi Flow product positioning
+- [x] Add branding migration rules
+- [x] Separate product-facing identity from upstream technical identifiers
+- [ ] Centralized Pravidhi design system
+- [ ] Pravidhi application icons and launch assets
+
+### Workspace experience
+
+- [ ] New workspace shell
+- [ ] Command center
+- [ ] Unified search
+- [ ] Contextual AI surface
+- [ ] Mobile-first interaction improvements
+
+### AI platform
+
+- [ ] AI gateway abstraction
+- [ ] Context engine
+- [ ] Tool registry
+- [ ] Agent runtime
+- [ ] Capability-based permissions
+- [ ] Memory layer
+- [ ] Execution traces and audit events
+
+### Flows
+
+- [ ] Visual Flow builder
+- [ ] Triggers
+- [ ] Conditions
+- [ ] Actions
+- [ ] Scheduled execution
+- [ ] Approval gates
+- [ ] Retry/error policies
+- [ ] Execution history
+
+### Ecosystem
+
+- [ ] MCP integrations
+- [ ] GitHub integration
+- [ ] Email/calendar integrations
+- [ ] Developer center
+- [ ] Agent and Flow templates
+- [ ] Plugin/marketplace foundations
+
+---
+
+## 🏗️ Development
+
+The repository contains a large existing Flutter/Rust workspace codebase. Before modifying shared foundation code, identify whether a change belongs to the upstream-derived foundation or the Pravidhi-owned platform layer.
+
+### Recommended boundaries
+
+```text
+frontend/
+├── appflowy_flutter/
+│   ├── existing workspace foundation
+│   └── pravidhi/
+│       ├── ai/
+│       ├── agents/
+│       ├── flows/
+│       ├── memory/
+│       ├── permissions/
+│       ├── integrations/
+│       ├── command_center/
+│       └── observability/
+│
+└── rust-lib/
+    └── pravidhi/
+        ├── agent_runtime/
+        ├── workflow_engine/
+        ├── permissions/
+        └── integrations/
+```
+
+These boundaries are an architectural direction; they should be introduced incrementally rather than through a high-risk bulk move of upstream code.
+
+---
+
+## 🔐 Security principles
+
+Pravidhi Flow is intended to make AI execution controllable rather than opaque.
+
+1. Read access and write access are distinct capabilities.
+2. Destructive actions require explicit policy handling.
+3. Externally visible actions can require approval.
+4. Agent executions should produce audit information.
+5. Secrets must never be placed in prompts or normal execution logs.
+6. Core workspace functionality should remain useful without AI.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome. For larger changes, please describe the user problem, affected subsystem, compatibility impact, and testing strategy before implementation.
+
+When working on the Pravidhi layer, prefer small, isolated modules with explicit interfaces so upstream synchronization remains manageable.
+
+---
+
+## 📜 Upstream, licensing, and attribution
+
+Pravidhi Flow is derived from the open-source AppFlowy codebase and retains the applicable upstream licensing and attribution requirements. Product-facing branding is being migrated to Pravidhi Flow, but upstream technical dependencies and required legal notices are not removed by this rebrand.
+
+See [`LICENSE`](LICENSE) and [`docs/PRAVIDHI_BRAND.md`](docs/PRAVIDHI_BRAND.md) for the current project guidance.
+
+## 📚 Project documentation
+
+- [Pravidhi Flow Brand Foundation](docs/PRAVIDHI_BRAND.md)
+- [Rebrand & Enhancement Design](docs/superpowers/specs/2026-08-12-pravidhi-flow-rebrand-design.md)
+
+---
+
+<p align="center">
+  <strong>Pravidhi Flow — Think. Build. Automate.</strong>
+</p>
