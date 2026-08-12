@@ -8,9 +8,8 @@ environment:
   flutter: ">=3.27.4"
   sdk: ">=3.3.0 <4.0.0"
 
-# The package name remains `appflowy` intentionally for this migration phase.
-# Renaming it is a source-compatible API change and should be handled as a
-# dedicated migration after all package imports and generated artifacts are audited.
+# The package name remains `appflowy` intentionally during the migration.
+# Renaming it requires a dedicated package/import/generated-artifact migration.
 
 dependencies:
   any_date: ^1.0.4
@@ -33,6 +32,8 @@ dependencies:
   auto_size_text_field: ^2.2.3
   auto_updater: ^1.0.0
   avatar_stack: ^3.0.0
+
+  # BitsDojo Window for Windows
   bitsdojo_window: ^0.1.6
   bloc: ^9.0.0
   cached_network_image: ^3.3.0
@@ -43,6 +44,8 @@ dependencies:
   collection: ^1.17.1
   connectivity_plus: ^5.0.2
   cross_file: ^0.3.4+1
+
+  # Desktop Drop uses Cross File (XFile) data type
   defer_pointer: ^0.0.2
   desktop_drop: ^0.5.0
   device_info_plus:
@@ -52,7 +55,7 @@ dependencies:
   envied: ^1.0.1
   equatable: ^2.0.5
   expandable: ^5.0.1
-  extended_text_field: ^16.0.0
+  extended_text_field: ^16.0.2
   extended_text_library: ^12.0.0
   file: ^7.0.0
   fixnum: ^1.1.0
@@ -76,6 +79,7 @@ dependencies:
       ref: "355aa56"
   flutter_math_fork: ^0.7.3
   flutter_slidable: ^3.0.0
+
   flutter_staggered_grid_view: ^0.7.0
   flutter_tex: ^4.0.9
   fluttertoast: ^8.2.6
@@ -87,19 +91,27 @@ dependencies:
   hive_flutter: ^1.1.0
   hotkey_manager: ^0.1.7
   html2md: ^1.3.2
+  envied: ^1.0.1
   http: ^1.0.0
   image_picker: ^1.0.4
+
+  #  third party packages
   intl: ^0.19.0
   json_annotation: ^4.8.1
   keyboard_height_plugin: ^0.1.5
   leak_tracker: ^10.0.0
   linked_scroll_controller: ^0.2.0
+
+  # Notifications
+  # TODO: Consider implementing custom package
+  # to gather notification handling for all platforms
   local_notifier: ^0.1.5
   markdown:
   markdown_widget: ^2.3.2+6
   mime: ^2.0.0
   nanoid: ^1.0.0
   numerus: ^2.1.2
+  # Used to open local files on Mobile
   open_filex: ^4.5.0
   package_info_plus: ^8.0.2
   path: ^1.8.3
@@ -124,32 +136,41 @@ dependencies:
   table_calendar: ^3.0.9
   time: ^2.1.3
   event_bus: ^2.0.1
+
   toastification: ^2.0.0
   universal_platform: ^1.1.0
   unsplash_client: ^2.1.1
   url_launcher: ^6.1.11
   url_protocol:
+
+  # Window Manager for MacOS and Linux
   version: ^3.0.2
   xml: ^6.5.0
   window_manager: ^0.4.3
   saver_gallery: ^4.0.1
   talker_bloc_logger: ^4.8.1
   talker: ^4.7.1
-  analyzer: 6.11.0
-  html: any
 
+  analyzer: 6.11.0
+
+  html: any
 dev_dependencies:
+  # Introduce talker to log the bloc events, and only log the events in the development mode
+
   bloc_test: ^10.0.0
   build_runner: ^2.4.9
   envied_generator: ^1.0.1
   flutter_lints: ^5.0.0
+
   flutter_test:
     sdk: flutter
   freezed: ^2.4.7
   integration_test:
     sdk: flutter
   json_serializable: ^6.7.1
+
   mocktail: ^1.0.1
+
   plugin_platform_interface: any
   run_with_network_images: ^0.0.1
   url_launcher_platform_interface: any
@@ -157,70 +178,88 @@ dev_dependencies:
 dependency_overrides:
   http: ^1.0.0
   device_info_plus: ^11.2.2
+
   url_protocol:
     git:
       url: https://github.com/LucasXu0/flutter_url_protocol.git
       commit: 737681d
+
   appflowy_editor:
     git:
       url: https://github.com/AppFlowy-IO/appflowy-editor.git
       ref: "470c4e7"
+
   appflowy_editor_plugins:
     git:
       url: https://github.com/AppFlowy-IO/AppFlowy-plugins.git
       path: "packages/appflowy_editor_plugins"
       ref: "4efcff7"
+
   sheet:
     git:
       url: https://github.com/jamesblasco/modal_bottom_sheet
       ref: e44458d
       path: sheet
+
   window_manager:
     git:
       url: https://github.com/leanflutter/window_manager.git
       ref: "5a43aed"
       path: packages/window_manager
+
   uuid: ^4.4.0
+
   flutter_cache_manager:
     git:
       url: https://github.com/LucasXu0/flutter_cache_manager.git
       commit: fbab857b1b1d209240a146d32f496379b9f62276
       path: flutter_cache_manager
+
   flutter_sticky_header: ^0.7.0
+
   reorderable_tabbar:
     git:
       url: https://github.com/LucasXu0/reorderable_tabbar
       ref: 93c4977
+  # Don't upgrade file_picker until the issue is fixed
+  # https://github.com/miguelpruivo/flutter_file_picker/issues/1652
   file_picker: 8.1.4
+
   auto_updater:
     git:
       url: https://github.com/LucasXu0/auto_updater.git
       path: packages/auto_updater
       ref: 1d81a824f3633f1d0200ba51b78fe0f9ce429458
+
   auto_updater_macos:
     git:
       url: https://github.com/LucasXu0/auto_updater.git
       path: packages/auto_updater_macos
       ref: 1d81a824f3633f1d0200ba51b78fe0f9ce429458
+
   auto_updater_platform_interface:
     git:
       url: https://github.com/LucasXu0/auto_updater.git
       path: packages/auto_updater_platform_interface
       ref: 1d81a824f3633f1d0200ba51b78fe0f9ce429458
+
   unsplash_client:
     git:
       url: https://github.com/LucasXu0/unsplash_client.git
       ref: a8411fc
+
+  # https://github.com/LucasXu0/flutter-permission-handler/commit/faef1c97970de29995642bfae61b884591798684
+  # Prevent the location from being accessed continuously on Windows
   permission_handler:
     git:
       url: https://github.com/LucasXu0/flutter-permission-handler.git
       path: permission_handler
       ref: faef1c9
-  flutter_sticky_header: ^0.7.0
 
 flutter:
   generate: true
   uses-material-design: true
+
   fonts:
     - family: Poppins
       fonts:
@@ -247,6 +286,10 @@ flutter:
         - asset: assets/google_fonts/Roboto_Mono/RobotoMono-Regular.ttf
         - asset: assets/google_fonts/Roboto_Mono/RobotoMono-Italic.ttf
           style: italic
+    # White-label font configuration will be added here
+    # BEGIN: WHITE_LABEL_FONT
+    # END: WHITE_LABEL_FONT
+
   assets:
     - assets/images/
     - assets/images/appearance/
@@ -263,8 +306,12 @@ flutter:
     - assets/icons/icons.json
     - assets/fonts/
     - assets/built_in_prompts.json
+
+    # The following assets will be excluded in release.
+    # BEGIN: EXCLUDE_IN_RELEASE
     - assets/test/workspaces/
     - assets/test/images/
     - assets/template/
     - assets/test/workspaces/markdowns/
     - assets/test/workspaces/database/
+    # END: EXCLUDE_IN_RELEASE
